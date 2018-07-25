@@ -118,19 +118,20 @@
       ]
     },
     {
-      "apiVersion": "2014-06-01",
+      "apiVersion": "2016-09-01",
       "name": "[parameters('names-nebbodoro-api-sp')]",
       "type": "Microsoft.Web/serverfarms",
       "location": "[resourceGroup().location]",
-      "sku": {
-        "name": "B1"
-      },
       "tags": {
         "displayName": "[parameters('names-nebbodoro-api-sp')]",
         "Tier": "Back-end"
       },
+      "sku": {
+        "name": "B1",
+        "capacity": 1
+      },
       "properties": {
-        "name": "[parameters('names-nebbodoro-api-sp')]"
+        "name": "[parameters('names-nebbodoro-api-sp')]"  
       }
     },
     {
