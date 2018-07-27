@@ -20,7 +20,7 @@ namespace Nebbodoro.API.Controllers
         {
             _pomodoroContext.Database.Migrate();
 
-            _pomodoroContext.AddPomodorosFor("Phil", "phil@nebbiatech.com", "Coding");
+            _pomodoroContext.AddPomodorosFor("Jeff", "Jeff@nebbiatech.com", "Training");
             _pomodoroContext.AddPomodorosFor("Facundo", "facundo@nebbiatech.com", "Research");
             _pomodoroContext.AddPomodorosFor("Jared", "jared@nebbiatech.com", "Blogging");
             _pomodoroContext.AddPomodorosFor("Esteban", "esteban@nebbiatech.com", "RoadShow");
